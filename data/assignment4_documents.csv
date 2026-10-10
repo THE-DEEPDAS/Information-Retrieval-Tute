@@ -1,0 +1,11 @@
+id,title,content,relevant
+D1,Machine learning diagnosis,Machine learning helps doctors detect disease from medical images and patient data.,1
+D2,Healthcare AI analysis,Artificial intelligence analyzes healthcare records and improves treatment.,1
+D3,Computer networks history,History of network protocols packet switching and the Internet.,0
+D4,Deep learning disease prediction,Deep neural networks predict disease risk from clinical data.,1
+D5,Database management,Relational databases provide SQL queries and structured storage.,0
+D6,Machine learning applications,Supervised learning includes classification prediction and recommendation.,1
+D7,Healthcare information systems,Systems store patient records and support hospitals.,1
+D8,Computer graphics,Rendering geometric transformations and image synthesis.,0
+D9,Statistics in medicine,Statistical analysis supports clinical trials diagnosis and healthcare.,1
+D10,Operating systems,Processes memory files and scheduling are operating system topics.,0

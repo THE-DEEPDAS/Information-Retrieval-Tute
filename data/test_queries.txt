@@ -1,0 +1,8 @@
+# Assignment 4
+machine learning applications in healthcare
+healthcare data analysis using artificial intelligence
+
+# Assignment 5
+documents about protecting computer networks
+neural networks for language processing
+relational database indexing and SQL

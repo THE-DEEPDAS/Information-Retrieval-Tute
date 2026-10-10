@@ -1,0 +1,21 @@
+id,topic,text
+D1,AI,neural networks deep learning images
+D2,AI,natural language processing text models
+D3,AI,machine learning prediction data
+D4,AI,computer vision image recognition
+D5,AI,speech recognition neural language
+D6,Cybersecurity,network security firewalls protect computer networks
+D7,Cybersecurity,cryptography encryption secure communication
+D8,Cybersecurity,cyberattacks malware intrusion detection
+D9,Cybersecurity,authentication access control security
+D10,Cybersecurity,privacy security threat incident response
+D11,Databases,relational databases SQL tables queries
+D12,Databases,database indexing improves performance
+D13,Databases,transactions concurrency management
+D14,Databases,data warehouse analytics information
+D15,Databases,NoSQL document databases distributed storage
+D16,Networking,computer networks routing TCP IP protocols
+D17,Networking,wireless networks communication connectivity
+D18,Networking,network topology packet switching routers
+D19,Networking,Internet architecture distributed services
+D20,Networking,cloud networking virtual machines

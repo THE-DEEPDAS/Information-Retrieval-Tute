@@ -1,0 +1,21 @@
+Documents: 20 | Clusters: 4 | Query: documents about protecting computer networks
+
+Clusters and topic keywords:
+Cluster 1: ['D1', 'D2', 'D3', 'D5', 'D7', 'D8', 'D12', 'D13', 'D14', 'D17', 'D19', 'D20'] | neural, networks, learning, language, data
+Cluster 2: ['D4', 'D6', 'D9', 'D10', 'D18'] | security, computer, network, vision, image
+Cluster 3: ['D11', 'D15'] | databases, relational, sql, tables, queries
+Cluster 4: ['D16'] | computer, networks, routing, tcp, ip
+
+Anomaly candidates (similarity < 0.55): ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D12', 'D13', 'D14', 'D17', 'D18', 'D19', 'D20']
+
+Top retrieval:
+1. D6 (Cybersecurity) score=0.4633
+2. D16 (Networking) score=0.4226
+3. D4 (AI) score=0.2989
+4. D17 (Networking) score=0.2284
+5. D1 (AI) score=0.2065
+6. D2 (AI) score=0.0000
+7. D3 (AI) score=0.0000
+8. D5 (AI) score=0.0000
+
+Evaluation: Precision@8=0.3750, Recall@8=0.3000

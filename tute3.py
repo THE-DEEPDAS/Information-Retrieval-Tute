@@ -4,13 +4,11 @@ from collections import Counter
 import matplotlib.pyplot as plt
 import numpy as np
 
-
 folder = "documents"
 
 all_tokens = []
 
 for filename in os.listdir(folder):
-
     if filename.endswith(".txt"):
 
         path = os.path.join(folder, filename)
@@ -19,6 +17,7 @@ for filename in os.listdir(folder):
             text = file.read()
 
         text = text.lower()
+        # \b is word boundary
         words = re.findall(r"\b[a-z]+\b", text)
         all_tokens.extend(words)
 
@@ -28,17 +27,17 @@ print("Unique words:", len(set(all_tokens)))
 print("PART A - ZIPF'S LAW")
 
 frequency = Counter(all_tokens)
+# most_common() sorts the words from highest frequency to lowest frequency.
 sorted_words = frequency.most_common()
 print("\nTop 20 most frequent words:")
-print("-" * 40)
-print(f"{'Rank':<10}{'Word':<15}{'Frequency'}")
+# left-align the rank and word, right-align the frequency
+print(f"{'Rank':<10}{'Word':<15}{'Frequency':>10}")
 
 for rank, (word, count) in enumerate(sorted_words[:20], start=1):
-
     print(
         f"{rank:<10}"
         f"{word:<15}"
-        f"{count}"
+        f"{count:>10}"
     )
 
 ranks = np.arange(1, len(sorted_words) + 1)
@@ -73,26 +72,20 @@ plt.show()
 
 
 print("PART B - HEAP'S LAW")
-
+# the number of distinct words in a document as a function of the document length
+# vocab size = K * B^N
 
 total_words = len(all_tokens)
 
 word_counts = []
 vocabulary_sizes = []
 
-
-# Use 10%, 20%, ..., 100%
 for percentage in range(10, 101, 10):
-
     n = int(total_words * percentage / 100)
 
     # Take first n words
     current_tokens = all_tokens[:n]
-
-    # Total number of words
     N = len(current_tokens)
-
-    # Number of unique words
     V = len(set(current_tokens))
 
     word_counts.append(N)
