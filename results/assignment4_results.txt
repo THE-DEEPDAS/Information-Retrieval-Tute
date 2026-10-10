@@ -1,0 +1,19 @@
+Query: machine learning applications in healthcare
+
+TF-IDF/VSM top five:
+1. D6 Machine learning applications score=0.9979
+2. D1 Machine learning diagnosis score=0.9976
+3. D9 Statistics in medicine score=0.9973
+4. D2 Healthcare AI analysis score=0.9968
+5. D4 Deep learning disease prediction score=0.9965
+
+Probabilistic/BIM top five:
+1. D6 Machine learning applications score=3.8317
+2. D9 Statistics in medicine score=2.6080
+3. D1 Machine learning diagnosis score=1.9859
+4. D2 Healthcare AI analysis score=0.7621
+5. D4 Deep learning disease prediction score=0.7621
+
+Evaluation (P R F MRR MAP NDCG):
+TF-IDF 0.6000 1.0000 0.7500 1.0000 1.0000 1.0000
+Probabilistic 0.6000 1.0000 0.7500 1.0000 1.0000 1.0000

@@ -1,21 +1,25 @@
 Documents: 20 | Clusters: 4 | Query: documents about protecting computer networks
 
-Clusters and topic keywords:
-Cluster 1: ['D1', 'D2', 'D3', 'D5', 'D7', 'D8', 'D12', 'D13', 'D14', 'D17', 'D19', 'D20'] | neural, networks, learning, language, data
-Cluster 2: ['D4', 'D6', 'D9', 'D10', 'D18'] | security, computer, network, vision, image
-Cluster 3: ['D11', 'D15'] | databases, relational, sql, tables, queries
-Cluster 4: ['D16'] | computer, networks, routing, tcp, ip
+Cluster membership:
+Cluster 1: ['D6', 'D9', 'D10', 'D16', 'D18']
+Cluster 2: ['D1', 'D3', 'D7', 'D8', 'D12', 'D13', 'D14', 'D17', 'D20']
+Cluster 3: ['D11', 'D15', 'D19']
+Cluster 4: ['D2', 'D4', 'D5']
 
-Anomaly candidates (similarity < 0.55): ['D1', 'D2', 'D3', 'D4', 'D5', 'D6', 'D7', 'D8', 'D9', 'D10', 'D12', 'D13', 'D14', 'D17', 'D18', 'D19', 'D20']
+LDA topic keywords:
+Topic 1: networks, computer, security, distributed, communication, protocols
+Topic 2: data, learning, network, packet, switching, routers
+Topic 3: language, recognition, neural, models, processing, natural
+Topic 4: databases, relational, sql, queries, tables, machines
 
-Top retrieval:
-1. D6 (Cybersecurity) score=0.4633
-2. D16 (Networking) score=0.4226
-3. D4 (AI) score=0.2989
-4. D17 (Networking) score=0.2284
-5. D1 (AI) score=0.2065
-6. D2 (AI) score=0.0000
-7. D3 (AI) score=0.0000
-8. D5 (AI) score=0.0000
+Top retrieval results:
+1. D16 (Networking) score=0.5337
+2. D7 (Cybersecurity) score=0.3953
+3. D6 (Cybersecurity) score=0.3211
+4. D8 (Cybersecurity) score=0.1919
+5. D4 (AI) score=0.1309
+6. D9 (Cybersecurity) score=0.1268
+7. D10 (Cybersecurity) score=0.1122
+8. D17 (Networking) score=0.1116
 
-Evaluation: Precision@8=0.3750, Recall@8=0.3000
+Evaluation: Precision@8=0.8750, Recall@8=0.7000, F1@8=0.7778

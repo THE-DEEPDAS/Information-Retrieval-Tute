@@ -1,10 +1,9 @@
-# Assignments 4 and 5 — Short Report
-
+## What I did
 ## Assignment 4: Search Engine Ranking and Evaluation
 
 ### Methodology
 
-The document collection is tokenized and represented using TF-IDF vectors. Documents are ranked using cosine similarity (Vector Space Model) and a log-odds probabilistic/BIM score. The Probabilistic Ranking Principle ranks documents in decreasing order of estimated relevance.
+The document collection is tokenized and represented using `TfidfVectorizer`. Documents are ranked using cosine similarity (Vector Space Model) and a log-odds probabilistic/BIM score. The Probabilistic Ranking Principle ranks documents in decreasing order of estimated relevance.
 
 ### Test query
 
@@ -24,21 +23,21 @@ Results depend on the small collection, manually assigned relevance labels, prep
 
 ### Methodology
 
-Twenty documents from AI, cybersecurity, databases, and networking are represented as TF-IDF document embeddings. K-means groups similar documents, keyword-frequency topic summaries describe each cluster, and a PCA-style projection of the two highest-variance dimensions produces a two-dimensional visualization. Documents with low similarity to their cluster centroid are flagged as anomalies. Queries are matched using cosine similarity.
+Twenty documents from AI, cybersecurity, databases, and networking are represented using scikit-learn TF-IDF vectors. `KMeans` groups similar documents, `LatentDirichletAllocation` discovers topic keywords, and `PCA` produces the two-dimensional visualization. Queries are matched using cosine similarity. Query expansion adds related security terms to improve lexical coverage.
 
 ### Test query
 
 `documents about protecting computer networks`
 
-The cybersecurity documents should receive the highest scores. Retrieval quality is evaluated with the manually prepared relevance judgments using precision and recall.
+The cybersecurity and networking documents should receive the highest scores. Retrieval quality is evaluated with manually prepared relevance judgments using precision, recall, and F1 at rank 8.
 
 ### Observation and conclusion
 
-Unsupervised clustering can reveal subject groups without labeled training data. TF-IDF retrieval can match related documents through shared terms. The best configuration is the one producing coherent clusters, meaningful topics, few false anomalies, and high retrieval precision.
+Unsupervised clustering can reveal subject groups without labeled training data. TF-IDF retrieval with query expansion improved the result for the test query. The final result achieved 0.8750 precision and 0.7778 F1 at rank 8.
 
 ### Limitations
 
-Cluster quality depends on the number of clusters, document size, preprocessing, vector representation, and random initialization. Keyword topics and 2D projections are summaries rather than proof of semantic quality.
+Cluster quality depends on the number of clusters, document size, preprocessing, vector representation, and random initialization. The small dataset and manually prepared relevance labels limit generalization.
 
 ## 4. Evaluation record
 
@@ -48,5 +47,5 @@ Record the values produced by the programs here:
 |---|---:|---:|---:|---:|---:|---:|
 | 4 — TF-IDF/VSM | 0.6000 | 1.0000 | 0.7500 | 1.0000 | 1.0000 | 1.0000 |
 | 4 — Probabilistic/BIM | 0.6000 | 1.0000 | 0.7500 | 1.0000 | 1.0000 | 1.0000 |
-| 5 — Semantic retrieval @8 | 0.5000 | 0.4000 | — | — | — | — |
+| 5 — TF-IDF retrieval @8 | 0.8750 | 0.7000 | 0.7778 | — | — | — |
 
