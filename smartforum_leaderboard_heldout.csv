@@ -1,0 +1,14 @@
+,P10,nDCG10,MAP100,MRR
+TF-IDF cosine,0.689,0.729,0.508,0.945
+"BM25 (default k1=1.5,b=.75)",0.706,0.759,0.522,0.974
+"BM25 tuned (k1=3.0, b=0.25)",0.752,0.789,0.55,0.956
+Word-embedding avg,0.722,0.727,0.558,0.909
+Dense (LSA),0.719,0.756,0.547,0.971
+Hybrid RRF (BM25+dense),0.75,0.794,0.556,0.972
+Hybrid linear (α=0.7),0.747,0.79,0.556,0.972
+LDA topic similarity (weak signal),0.639,0.266,0.584,0.684
+Hybrid + class FILTER (hard),0.811,0.808,0.81,0.813
+Hybrid + class BOOST (soft),0.802,0.821,0.747,0.912
+LTR: Ridge (linear),0.788,0.79,0.354,0.828
+LTR: GBDT (pointwise),0.805,0.823,0.356,0.901
+LTR: LambdaMART (LightGBM),0.803,0.834,0.354,0.974

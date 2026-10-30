@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 folder = "documents"
-
 all_tokens = []
 
 for filename in os.listdir(folder):
@@ -19,6 +18,7 @@ for filename in os.listdir(folder):
         text = text.lower()
         # \b is word boundary
         words = re.findall(r"\b[a-z]+\b", text)
+        # many words so iterable thi add kariye
         all_tokens.extend(words)
 
 print("TOTAL COLLECTION")
@@ -73,7 +73,7 @@ plt.show()
 
 print("PART B - HEAP'S LAW")
 # the number of distinct words in a document as a function of the document length
-# vocab size = K * B^N
+# vocab size = K * N^B
 
 total_words = len(all_tokens)
 
